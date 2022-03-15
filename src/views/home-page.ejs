@@ -1,0 +1,87 @@
+<header class="main-header">
+    <h1>
+        <span class="tall-char">W</span>elcome to <span class="tall-char">S</span>hawn's
+        <span class="tall-char">P</span>lant <span class="tall-char">H</span>ut<span class="tall-char">!</span>
+    </h1>
+    <p class="header-desc">
+        This web site explores the large genus of plants known as philodendrons.
+    </p>
+</header>
+<section class="container">
+    <div class="row">
+        <div class="content-images col-md-6 col-sm-12">
+            <div class="video-area">
+                <video id="video" poster="images/Poster.png" controls conten>
+                    <!-- <source src="images/NewLeaf.mp4" type="video/mp4" > -->
+                    <source src="<%= `${process.env.CDN_VIDEO_ENDPOINT}NewLeaf.mp4` %>" type="video/mp4">
+                    Your browser does not support the HTML video tag.
+                </video>
+                <p class="boldText traits">
+                    New leaf emerging on a <a href="?action=article&species=Philodendron Warszewiczii">philodendron warszewiczii</a>.
+                </p>
+            </div>
+        </div>
+        <div class="traits col-md-6 col-sm-12">
+            <h2>About:</h2>
+            <p class="descriptions">
+                Philodendrons add a unique, tropical appearance to the indoor environment and are often undemanding regarding their care as long as certain requirements are met. Available to indoor growers are a wide variety of species from which to choose, featuring distinguishing characteristics such as leaf shape, size, color, and growing habit. Large growing species such as <a href="?action=article&species=Philodendron Giganteum">philodendron giganteum</a> provide a bold, dramatic effect with their enormous foliage while smaller, colorful, <a href="?action=article&species=Philodendron Hybrids: Prince of Orange, Black Cardinal, Moonlight">hybridized species</a> work well under lower light conditions and are suitable for a window sill or desk.
+            </p>
+            <p class="descriptions">
+                If you are new to philodendrons, please read the following section on basic plant structure and growth habit. Becoming familiar with these aspects of philodendrons will allow you to better understand individual species and improve your decisions when purchasing a specimen for your home. You might also want to check out the <a href="?action=growingGuide">growing guide</a>, which offers soil recommendations, watering advice, and more.
+            </p>
+            <p class="descriptions notice">
+                <span class="boldText">Note:</span> Mature leaf sizes listed on this web site refer to approximated leaf blade sizes observed in nature and are a way to compare leaf sizes among different species. Indoor specimens do not grow nearly as large and can take several years to reach their adult form.
+            </p>
+        </div>
+    </div>
+</section>
+<section class="container">
+    <div class="row no-gutters">
+        <div class="d-none d-md-block col-md-6 col-sm-12">
+            <figure class="main-sample-fig">
+                <img src="<%= `${process.env.CDN_ENDPOINT}Giganteum4.jpg` %>" alt="Photograph of the structure of a philodendron" />
+                <figcaption class="boldText">Basic structure of a philodendron.</figcaption>
+            </figure>
+        </div>
+        <div class="col-md-6 col-sm-12">
+            <div class="traits">
+                <h2>Basic Plant Structure:</h2>
+                <ul class="fact-list">
+                    <li>
+                        <span class="boldText">Cataphyll</span> &ndash; A leaf-like structure that protects a new leaf as it emerges.
+                    </li>
+                    <li>
+                        <span class="boldText">Petiole</span> &ndash; What most people refer to as a stem is actually described scientifically as a petiole. It is the support that connects the leaf blade to the actual stem of the plant.
+                    </li>
+                    <li>
+                        <span class="boldText">Stem</span> &ndash; The base, or stalk of the plant, which roots and petioles grow from.
+                    </li>
+                    <li>
+                        <span class="boldText">Aerial Root</span> &ndash; Produced above the soil from the side of the stem. The purpose of these roots is to climb around a support or grow down into the soil to absorb nutrients and help anchor the plant.
+                    </li>
+                </ul>
+            </div>
+            <figure class="d-block d-md-none my-4">
+                <img src="<%= `${process.env.CDN_ENDPOINT}Giganteum4.jpg` %>" alt="Photograph of the structure of a philodendron" />
+                <figcaption class="boldText">Basic structure of a philodendron.</figcaption>
+            </figure>
+            <div class="traits">
+                <h2>Growth Habits:</h2>
+                <p class="descriptions">
+                    There are three basic growth habits which philodendrons exhibit and are important for the grower to consider when purchasing a plant.
+                </p>
+                <ul class="fact-list">
+                    <li>
+                        <span class="boldText">Climbing</span> &ndash; Grow tall vertically and use aerial roots to cling to a support. Some species produce a thick stem that resembles a tree trunk while others are simply vines that grow even higher. See <a href="?action=article&species=Philodendron Warszewiczii">philodendron warszewiczii</a> and <a href="?action=article&species=Philodendron Squamiferum">philodendron squamiferum</a> for examples.
+                    </li>
+                    <li>
+                        <span class="boldText">Self-heading</span> &ndash; Grow low to the ground and do not climb, instead producing new leaves from the center of the plant in a clumping manner. See <a href="?action=article&species=Philodendron Hybrids: Prince of Orange, Black Cardinal, Moonlight">philodendron hybrids</a> for an example.
+                    </li>
+                    <li>
+                        <span class="boldText">Creeping</span> &ndash; Do not climb and instead spread the stem along the ground while producing upright petioles. See <a href="?action=article&species=Philodendron Pastazanum">philodendron pastazanum</a> for an example.
+                    </li>
+                </ul>
+            </div>
+        </div>		
+    </div>
+</section>

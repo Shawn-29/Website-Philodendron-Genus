@@ -1,0 +1,43 @@
+<header class="main-header">
+    <h1>
+        <span class="tall-char">P</span>lant <span class="tall-char">L</span>ist
+    </h1>
+    <p class="header-desc">
+        This table lists all of the species featured on this web site. Click on a species' name to go to an individiual page describing it.
+    </p>
+</header>
+<div class="table-responsive">
+    <table class="plant-table table">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Name</th>
+                <th>Growth Type</th>
+                <th>Light Requirement</th>
+                <th>Difficulty</th>
+                <th>Mature Leaf Size</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% let i = 0; %>
+            <% for (const p of plantData) { %>
+                <% const link = `/article/${p.id}`; %>
+                <tr>
+                    <td><a href="<%= link %>" title="Go to <%= p.name %>">
+                        <img
+                            src="<%= `${process.env.CDN_ENDPOINT}${p.filename}` %>"
+                            alt=""
+                            class="fade-in"
+                            loading="lazy"
+                        />
+                    </a></td>
+                    <td><a href="<%= link %>"><%= p.name %></a></td>
+                    <td><%= p.growth_type %></td>
+                    <td><%= p.light_requirement %></td>
+                    <td><%= p.difficulty %></td>
+                    <td><%= p.mature_size_description %></td>
+                </tr>
+            <% } %>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,81 @@
+<% let { info, imageURLs, origins }=plantData; %>
+    <header class="main-header">
+        <h1>
+            <%= info.name %>
+        </h1>
+    </header>
+    <section class="container p-0">
+        <div class="row">
+            <div class="col-md-6 col-sm-12 p-0">
+                <article>
+                    <noscript>
+                        <section id="gallery-img-container" class="gallery-img-container">
+                            <% for (const url of imageURLs) { %>
+                                <img src="<%= `${process.env.CDN_ENDPOINT}${url}` %>" alt=""
+                                    class="gallery-scroll-img img-fluid fade-in" />
+                            <% } %>
+                        </section>
+                        <% if (imageURLs.length > 1) { %>
+                            <p class="small-text text-center">(Slide to view images)</p>
+                        <% } %>
+                    </noscript>
+                    <section id="gallery-thumbnail-container" class="hidden col-md-12 text-center">
+                        <img
+                            id="gallery-large-img"
+                            class="img-fluid fade-in"
+                            alt=""
+                        />
+                        <% for (const url of imageURLs) { %>
+                            <img
+                                src="<%= `${process.env.CDN_ENDPOINT}${url}` %>"
+                                alt=""
+                                class="thumbnail fade-in"
+                            />
+                        <% } %>
+                    </section>
+                </article>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="traits">
+                    <h3>Origin:</h3>
+                    <p>
+                        <%= origins %>
+                    </p>
+                </div>
+                <div class="traits">
+                    <h3>Growth Type:</h3>
+                    <p>
+                        <%= info.growth_type %>
+                    </p>
+                </div>
+                <div class="traits">
+                    <h3>Light Requirement:</h3>
+                    <p>
+                        <%= info.light_requirement %>
+                    </p>
+                </div>
+                <div class="traits">
+                    <h3>Difficulty:</h3>
+                    <p>
+                        <%= info.difficulty %>
+                    </p>
+                </div>
+                <div class="traits">
+                    <h3>Mature Leaf Size:</h3>
+                    <p>
+                        <%= info.mature_size_description %>
+                    </p>
+                </div>
+                <div class="traits">
+                    <h3>Description:</h3>
+                    <%- info.description %>
+                </div>
+                <div class="traits">
+                    <h3>Growing Advice:</h3>
+                    <%- info.growing_advice %>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <script src="/scripts/button-gallery.js"></script> -->
+    <script src="/scripts/button-gallery-new.js"></script>
