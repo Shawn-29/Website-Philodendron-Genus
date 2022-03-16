@@ -122,6 +122,7 @@ article {
 
 	background-position: center bottom;
 	background-repeat: repeat-x;
+	min-height: 9rem;
 	position: relative;
 }
 
