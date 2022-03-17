@@ -135,16 +135,16 @@ article {
 }
 
 #logo-msg {
+	display: none;
 	position: absolute;
 	bottom: 0;
 	left: 50%;
 	transform: translate(78%, -2%);
-	visibility: hidden;
 }
 
 @media (min-width: 768px) {
 	#logo-msg {
-		visibility: visible;
+		display: block;
 	}
 }
 
