@@ -12,7 +12,7 @@
                         <section id="gallery-img-container" class="gallery-img-container">
                             <% for (const url of imageURLs) { %>
                                 <img src="<%= `${process.env.CDN_ENDPOINT}${url}` %>" alt=""
-                                    class="gallery-scroll-img img-fluid fade-in" />
+                                    class="gallery-img img-fluid fade-in" />
                             <% } %>
                         </section>
                         <% if (imageURLs.length > 1) { %>
@@ -22,7 +22,7 @@
                     <section id="gallery-thumbnail-container" class="hidden col-md-12 text-center">
                         <img
                             id="gallery-large-img"
-                            class="img-fluid fade-in"
+                            class="gallery-img img-fluid fade-in"
                             alt=""
                         />
                         <% for (const url of imageURLs) { %>
