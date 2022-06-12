@@ -1,7 +1,7 @@
 # Shawn's Plant Hut
 
-![Plant Site Sample Image 1](https://github.com/Shawn-29/ShawnPlantHut/blob/master/public/images/PlantSiteSample1.jpg)
-![Plant Site Sample Image 2](https://github.com/Shawn-29/ShawnPlantHut/blob/master/public/images/PlantSiteSample2.jpg)
+![Plant Site Sample Image 1](https://github.com/Shawn-29/Website-Philodendron-Genus/blob/main/public/images/PlantSiteSample1.jpg)
+![Plant Site Sample Image 2](https://github.com/Shawn-29/Website-Philodendron-Genus/blob/main/public/images/PlantSiteSample2.jpg)
 
 This website provides detailed information, photographs, and growing advice for a number of plants from the philodendron genus.
 
