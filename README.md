@@ -5,8 +5,6 @@
 
 This website provides detailed information, photographs, and growing advice for a number of plants from the philodendron genus.
 
-The app is online! You can try it [here](https://shawn-plant-hut.herokuapp.com/).
-
 # Technical Info:
 - Responsive layout, via BootStrap, ensures site displays correctly across all devices.
 - Dynamic data retrieval via JavaScript and MySQL.
